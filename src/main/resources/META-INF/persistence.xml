@@ -3,7 +3,8 @@
              version="3.0">
     <persistence-unit name="task-manager-pu">
         <!-- We'll add classes later like: <class>com.taskmanager.model.User</class> -->
-
+        <class>com.taskmanager.model.User</class>
+        <class>com.taskmanager.model.Task</class>
         <properties>
             <!-- JDBC connection -->
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
@@ -16,5 +17,6 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
         </properties>
+
     </persistence-unit>
 </persistence>
